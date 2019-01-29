@@ -14,3 +14,20 @@ netstat -anp
 ```
 kill pid
 ```
+## Print content of text (tar.gz) to terminal
+```
+zcat filename
+```
+
+## Find a file (recursive sub directories)
+```
+syntax:  find path -name filename_pattern
+example: find . -name "*filename*"
+```
+
+## Search text in tar.gz files
+```
+syntax:  zgrep regex_pattern filename_pattern
+example: zgrep "2019-01-01 " "*filename*"
+
+```
