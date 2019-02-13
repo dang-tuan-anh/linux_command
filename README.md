@@ -1,10 +1,16 @@
 # Linux command (CentOS)
-### Method to read big size log file.
+### How to read a big size log file.
+1. Use grep and awk command (any part of a big file)
 ```
 grep -n regex catalina.out
 835239:2019-02-13 16:27:54 (for example)
 awk 'FNR>=minLine && FNR<=maxLine' catalina.out
 ```
+2. Use tail command (only the last part of a big file)
+```
+tail -f -n10000 fileName
+```
+
 
 ### List out files with file zize human-readable
 ```
