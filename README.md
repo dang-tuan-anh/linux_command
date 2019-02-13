@@ -1,4 +1,10 @@
 # Linux command (CentOS)
+### Method to read big size log file.
+```
+grep -n regex catalina.out
+835239:2019-02-13 16:27:54 (for example)
+awk 'FNR>=minLine && FNR<=maxLine' catalina.out
+```
 
 ### List out files with file zize human-readable
 ```
