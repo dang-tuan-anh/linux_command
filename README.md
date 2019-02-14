@@ -52,3 +52,7 @@ example: zgrep "2019-01-01 " "*filename*"
 sftp username@servername
 get filename
 ```
+### Print out disk usage (human-readable)
+```
+df -h
+```
