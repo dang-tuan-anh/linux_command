@@ -1,4 +1,7 @@
 # Linux command (CentOS)
+### Grep recursively subfolders and count
+grep -r -c regex *
+
 ### How to read a big size log file.
 1. Use grep and awk command (any part of a big file)
 ```
