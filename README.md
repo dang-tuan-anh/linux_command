@@ -2,7 +2,7 @@
 ### Grep recursively subfolders and count number of lines matched
 grep -r -c regex *
 
-### How to read a big size log file.
+### Read a big size log file.
 1. Use grep  
 Display 100 lines before and after the matched regex.
 ```
@@ -19,7 +19,10 @@ awk 'FNR>=minLine && FNR<=maxLine' catalina.out
 ```
 tail -f -n10000 fileName
 ```
-
+### Find file name in a zip file.
+```
+tar tf 20180615.tar.gz | grep JIDU6T
+```
 
 ### List out files with file zize human-readable
 ```
