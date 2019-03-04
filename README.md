@@ -1,15 +1,21 @@
 # Linux command (CentOS)
-### Grep recursively subfolders and count
+### Grep recursively subfolders and count number of lines matched
 grep -r -c regex *
 
 ### How to read a big size log file.
-1. Use grep and awk command (any part of a big file)
+1. Use grep
+Display 100 lines before and after the matched regex.
+```
+zgrep -A100 -B100 2029879 catalina.out.190206*
+```
+
+2. Use grep and awk command (any part of a big file)
 ```
 grep -n regex catalina.out
 835239:2019-02-13 16:27:54 (for example)
 awk 'FNR>=minLine && FNR<=maxLine' catalina.out
 ```
-2. Use tail command (only the last part of a big file)
+3. Use tail command (only the last part of a big file)
 ```
 tail -f -n10000 fileName
 ```
