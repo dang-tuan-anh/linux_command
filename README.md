@@ -3,7 +3,7 @@
 grep -r -c regex *
 
 ### How to read a big size log file.
-1. Use grep
+1. Use grep  
 Display 100 lines before and after the matched regex.
 ```
 zgrep -A100 -B100 2029879 catalina.out.190206*
