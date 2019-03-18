@@ -68,3 +68,17 @@ get filename
 ```
 df -h
 ```
+### Unzip tar.gz file
+```
+tar -zxvf filename.tar.gz
+```
+
+### See content of tar.gz file
+```
+tar -tf filename.tar.gz
+```
+
+### Grep inside tar.gz file
+```
+tar -O -xvf filename.tar.gz | grep keyword
+```
